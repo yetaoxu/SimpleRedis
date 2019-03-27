@@ -3,4 +3,4 @@ project(SimpleRedis)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(SimpleRedis main.cpp)
+add_executable(SimpleRedis main.cpp DataNode.cpp LinkList.cpp HashTable.cpp)

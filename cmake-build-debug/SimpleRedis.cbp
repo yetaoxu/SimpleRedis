@@ -80,6 +80,24 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/xuyetao/CLionProjects/SimpleRedis/DataNode.cpp">
+			<Option target="SimpleRedis"/>
+		</Unit>
+		<Unit filename="/Users/xuyetao/CLionProjects/SimpleRedis/DataNode.h">
+			<Option target="SimpleRedis"/>
+		</Unit>
+		<Unit filename="/Users/xuyetao/CLionProjects/SimpleRedis/HashTable.cpp">
+			<Option target="SimpleRedis"/>
+		</Unit>
+		<Unit filename="/Users/xuyetao/CLionProjects/SimpleRedis/HashTable.h">
+			<Option target="SimpleRedis"/>
+		</Unit>
+		<Unit filename="/Users/xuyetao/CLionProjects/SimpleRedis/LinkList.cpp">
+			<Option target="SimpleRedis"/>
+		</Unit>
+		<Unit filename="/Users/xuyetao/CLionProjects/SimpleRedis/LinkList.h">
+			<Option target="SimpleRedis"/>
+		</Unit>
 		<Unit filename="/Users/xuyetao/CLionProjects/SimpleRedis/main.cpp">
 			<Option target="SimpleRedis"/>
 		</Unit>

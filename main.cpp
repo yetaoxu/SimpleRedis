@@ -1,6 +1,16 @@
 #include <iostream>
+#include "HashTable.h"
+
+using namespace std;
+
+HashTable *globalHashTable;
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+
+    globalHashTable = new HashTable();
+    globalHashTable->size = 5;
+
+    put("1", "2");
+
     return 0;
 }

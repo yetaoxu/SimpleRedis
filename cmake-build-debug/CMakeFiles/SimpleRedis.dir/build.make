@@ -70,17 +70,62 @@ CMakeFiles/SimpleRedis.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SimpleRedis.dir/main.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xuyetao/CLionProjects/SimpleRedis/main.cpp -o CMakeFiles/SimpleRedis.dir/main.cpp.s
 
+CMakeFiles/SimpleRedis.dir/DataNode.cpp.o: CMakeFiles/SimpleRedis.dir/flags.make
+CMakeFiles/SimpleRedis.dir/DataNode.cpp.o: ../DataNode.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/xuyetao/CLionProjects/SimpleRedis/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/SimpleRedis.dir/DataNode.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SimpleRedis.dir/DataNode.cpp.o -c /Users/xuyetao/CLionProjects/SimpleRedis/DataNode.cpp
+
+CMakeFiles/SimpleRedis.dir/DataNode.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SimpleRedis.dir/DataNode.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/xuyetao/CLionProjects/SimpleRedis/DataNode.cpp > CMakeFiles/SimpleRedis.dir/DataNode.cpp.i
+
+CMakeFiles/SimpleRedis.dir/DataNode.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SimpleRedis.dir/DataNode.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xuyetao/CLionProjects/SimpleRedis/DataNode.cpp -o CMakeFiles/SimpleRedis.dir/DataNode.cpp.s
+
+CMakeFiles/SimpleRedis.dir/LinkList.cpp.o: CMakeFiles/SimpleRedis.dir/flags.make
+CMakeFiles/SimpleRedis.dir/LinkList.cpp.o: ../LinkList.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/xuyetao/CLionProjects/SimpleRedis/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/SimpleRedis.dir/LinkList.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SimpleRedis.dir/LinkList.cpp.o -c /Users/xuyetao/CLionProjects/SimpleRedis/LinkList.cpp
+
+CMakeFiles/SimpleRedis.dir/LinkList.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SimpleRedis.dir/LinkList.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/xuyetao/CLionProjects/SimpleRedis/LinkList.cpp > CMakeFiles/SimpleRedis.dir/LinkList.cpp.i
+
+CMakeFiles/SimpleRedis.dir/LinkList.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SimpleRedis.dir/LinkList.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xuyetao/CLionProjects/SimpleRedis/LinkList.cpp -o CMakeFiles/SimpleRedis.dir/LinkList.cpp.s
+
+CMakeFiles/SimpleRedis.dir/HashTable.cpp.o: CMakeFiles/SimpleRedis.dir/flags.make
+CMakeFiles/SimpleRedis.dir/HashTable.cpp.o: ../HashTable.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/xuyetao/CLionProjects/SimpleRedis/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/SimpleRedis.dir/HashTable.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SimpleRedis.dir/HashTable.cpp.o -c /Users/xuyetao/CLionProjects/SimpleRedis/HashTable.cpp
+
+CMakeFiles/SimpleRedis.dir/HashTable.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SimpleRedis.dir/HashTable.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/xuyetao/CLionProjects/SimpleRedis/HashTable.cpp > CMakeFiles/SimpleRedis.dir/HashTable.cpp.i
+
+CMakeFiles/SimpleRedis.dir/HashTable.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SimpleRedis.dir/HashTable.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xuyetao/CLionProjects/SimpleRedis/HashTable.cpp -o CMakeFiles/SimpleRedis.dir/HashTable.cpp.s
+
 # Object files for target SimpleRedis
 SimpleRedis_OBJECTS = \
-"CMakeFiles/SimpleRedis.dir/main.cpp.o"
+"CMakeFiles/SimpleRedis.dir/main.cpp.o" \
+"CMakeFiles/SimpleRedis.dir/DataNode.cpp.o" \
+"CMakeFiles/SimpleRedis.dir/LinkList.cpp.o" \
+"CMakeFiles/SimpleRedis.dir/HashTable.cpp.o"
 
 # External object files for target SimpleRedis
 SimpleRedis_EXTERNAL_OBJECTS =
 
 SimpleRedis: CMakeFiles/SimpleRedis.dir/main.cpp.o
+SimpleRedis: CMakeFiles/SimpleRedis.dir/DataNode.cpp.o
+SimpleRedis: CMakeFiles/SimpleRedis.dir/LinkList.cpp.o
+SimpleRedis: CMakeFiles/SimpleRedis.dir/HashTable.cpp.o
 SimpleRedis: CMakeFiles/SimpleRedis.dir/build.make
 SimpleRedis: CMakeFiles/SimpleRedis.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/xuyetao/CLionProjects/SimpleRedis/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable SimpleRedis"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/xuyetao/CLionProjects/SimpleRedis/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable SimpleRedis"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SimpleRedis.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
