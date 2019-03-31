@@ -1,16 +1,15 @@
-#include <iostream>
+#include <stdio.h>
 #include "HashTable.h"
-
-using namespace std;
-
-HashTable *globalHashTable;
 
 int main() {
 
-    globalHashTable = new HashTable();
-    globalHashTable->size = 5;
+    HashTable *hashTable = initHashTable(101);
 
-    put("1", "2");
+    char *key = "sampleKey";
+    char *value = "sampleValue";
 
-    return 0;
+    put(hashTable, 9, key, 11, value);
+    printf("HashTable size: %d", hashTable->size);
+
+    DataNode *dataNode = get(hashTable, 9, key);
 }

@@ -6,19 +6,22 @@
 #define SIMPLEREDIS_HASH_TABLE_H
 
 #include "DataNode.h"
-#include "LinkList.h"
+#include "LinkListNode.h"
 
 struct HashTable {
+    int capacity;
     int size;
-    LinkList *repos;
+    LinkListNode *repos;
 };
 
-int hashFunction(string key);
+int hash(HashTable *hashTable, char *key, int len);
 
-void put(string key, string value);
+HashTable* initHashTable(int capacity);
 
-string get(string key);
+void put(HashTable *hashTable, int kLen, char *key, int vLen, char *value);
 
-void remove(string key);
+DataNode *get(HashTable *hashTable, int kLen, char *key);
+
+void remove(char *key);
 
 #endif //SIMPLEREDIS_HASH_TABLE_H

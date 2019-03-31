@@ -7,22 +7,24 @@
 #IncludeRegexTransform: 
 
 /Users/xuyetao/CLionProjects/SimpleRedis/DataNode.h
-string
--
 
-/Users/xuyetao/CLionProjects/SimpleRedis/HashTable.h
-DataNode.h
-/Users/xuyetao/CLionProjects/SimpleRedis/DataNode.h
-LinkList.h
-/Users/xuyetao/CLionProjects/SimpleRedis/LinkList.h
-
-/Users/xuyetao/CLionProjects/SimpleRedis/LinkList.h
-DataNode.h
-/Users/xuyetao/CLionProjects/SimpleRedis/DataNode.h
-
-/Users/xuyetao/CLionProjects/SimpleRedis/main.cpp
-iostream
+/Users/xuyetao/CLionProjects/SimpleRedis/HashTable.cpp
+stdlib.h
 -
 HashTable.h
 /Users/xuyetao/CLionProjects/SimpleRedis/HashTable.h
+
+/Users/xuyetao/CLionProjects/SimpleRedis/HashTable.h
+DataNode.h
+/Users/xuyetao/CLionProjects/SimpleRedis/DataNode.h
+LinkListNode.h
+/Users/xuyetao/CLionProjects/SimpleRedis/LinkListNode.h
+
+/Users/xuyetao/CLionProjects/SimpleRedis/LinkListNode.h
+DataNode.h
+/Users/xuyetao/CLionProjects/SimpleRedis/DataNode.h
+stdlib.h
+-
+stdio.h
+-
 

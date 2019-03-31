@@ -7,14 +7,14 @@ CMakeFiles/SimpleRedis.dir/DataNode.cpp.o: ../DataNode.h
 CMakeFiles/SimpleRedis.dir/HashTable.cpp.o: ../DataNode.h
 CMakeFiles/SimpleRedis.dir/HashTable.cpp.o: ../HashTable.cpp
 CMakeFiles/SimpleRedis.dir/HashTable.cpp.o: ../HashTable.h
-CMakeFiles/SimpleRedis.dir/HashTable.cpp.o: ../LinkList.h
+CMakeFiles/SimpleRedis.dir/HashTable.cpp.o: ../LinkListNode.h
 
-CMakeFiles/SimpleRedis.dir/LinkList.cpp.o: ../DataNode.h
-CMakeFiles/SimpleRedis.dir/LinkList.cpp.o: ../LinkList.cpp
-CMakeFiles/SimpleRedis.dir/LinkList.cpp.o: ../LinkList.h
+CMakeFiles/SimpleRedis.dir/LinkListNode.cpp.o: ../DataNode.h
+CMakeFiles/SimpleRedis.dir/LinkListNode.cpp.o: ../LinkListNode.cpp
+CMakeFiles/SimpleRedis.dir/LinkListNode.cpp.o: ../LinkListNode.h
 
 CMakeFiles/SimpleRedis.dir/main.cpp.o: ../DataNode.h
 CMakeFiles/SimpleRedis.dir/main.cpp.o: ../HashTable.h
-CMakeFiles/SimpleRedis.dir/main.cpp.o: ../LinkList.h
+CMakeFiles/SimpleRedis.dir/main.cpp.o: ../LinkListNode.h
 CMakeFiles/SimpleRedis.dir/main.cpp.o: ../main.cpp
 

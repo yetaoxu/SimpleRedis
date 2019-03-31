@@ -92,10 +92,10 @@
 		<Unit filename="/Users/xuyetao/CLionProjects/SimpleRedis/HashTable.h">
 			<Option target="SimpleRedis"/>
 		</Unit>
-		<Unit filename="/Users/xuyetao/CLionProjects/SimpleRedis/LinkList.cpp">
+		<Unit filename="/Users/xuyetao/CLionProjects/SimpleRedis/LinkListNode.cpp">
 			<Option target="SimpleRedis"/>
 		</Unit>
-		<Unit filename="/Users/xuyetao/CLionProjects/SimpleRedis/LinkList.h">
+		<Unit filename="/Users/xuyetao/CLionProjects/SimpleRedis/LinkListNode.h">
 			<Option target="SimpleRedis"/>
 		</Unit>
 		<Unit filename="/Users/xuyetao/CLionProjects/SimpleRedis/main.cpp">

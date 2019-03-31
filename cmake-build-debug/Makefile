@@ -177,32 +177,32 @@ HashTable.cpp.s:
 	$(MAKE) -f CMakeFiles/SimpleRedis.dir/build.make CMakeFiles/SimpleRedis.dir/HashTable.cpp.s
 .PHONY : HashTable.cpp.s
 
-LinkList.o: LinkList.cpp.o
+LinkListNode.o: LinkListNode.cpp.o
 
-.PHONY : LinkList.o
+.PHONY : LinkListNode.o
 
 # target to build an object file
-LinkList.cpp.o:
-	$(MAKE) -f CMakeFiles/SimpleRedis.dir/build.make CMakeFiles/SimpleRedis.dir/LinkList.cpp.o
-.PHONY : LinkList.cpp.o
+LinkListNode.cpp.o:
+	$(MAKE) -f CMakeFiles/SimpleRedis.dir/build.make CMakeFiles/SimpleRedis.dir/LinkListNode.cpp.o
+.PHONY : LinkListNode.cpp.o
 
-LinkList.i: LinkList.cpp.i
+LinkListNode.i: LinkListNode.cpp.i
 
-.PHONY : LinkList.i
+.PHONY : LinkListNode.i
 
 # target to preprocess a source file
-LinkList.cpp.i:
-	$(MAKE) -f CMakeFiles/SimpleRedis.dir/build.make CMakeFiles/SimpleRedis.dir/LinkList.cpp.i
-.PHONY : LinkList.cpp.i
+LinkListNode.cpp.i:
+	$(MAKE) -f CMakeFiles/SimpleRedis.dir/build.make CMakeFiles/SimpleRedis.dir/LinkListNode.cpp.i
+.PHONY : LinkListNode.cpp.i
 
-LinkList.s: LinkList.cpp.s
+LinkListNode.s: LinkListNode.cpp.s
 
-.PHONY : LinkList.s
+.PHONY : LinkListNode.s
 
 # target to generate assembly for a file
-LinkList.cpp.s:
-	$(MAKE) -f CMakeFiles/SimpleRedis.dir/build.make CMakeFiles/SimpleRedis.dir/LinkList.cpp.s
-.PHONY : LinkList.cpp.s
+LinkListNode.cpp.s:
+	$(MAKE) -f CMakeFiles/SimpleRedis.dir/build.make CMakeFiles/SimpleRedis.dir/LinkListNode.cpp.s
+.PHONY : LinkListNode.cpp.s
 
 main.o: main.cpp.o
 
@@ -246,9 +246,9 @@ help:
 	@echo "... HashTable.o"
 	@echo "... HashTable.i"
 	@echo "... HashTable.s"
-	@echo "... LinkList.o"
-	@echo "... LinkList.i"
-	@echo "... LinkList.s"
+	@echo "... LinkListNode.o"
+	@echo "... LinkListNode.i"
+	@echo "... LinkListNode.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
