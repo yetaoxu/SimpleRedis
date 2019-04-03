@@ -7,7 +7,6 @@
 
 using namespace std;
 
-
 struct DataNode {
     int kLen;
     char *key;

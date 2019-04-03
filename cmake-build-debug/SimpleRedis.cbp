@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/xuyetao/CLionProjects/SimpleRedis/Client.cpp">
+			<Option target="SimpleRedis"/>
+		</Unit>
+		<Unit filename="/Users/xuyetao/CLionProjects/SimpleRedis/Client.h">
+			<Option target="SimpleRedis"/>
+		</Unit>
 		<Unit filename="/Users/xuyetao/CLionProjects/SimpleRedis/DataNode.cpp">
 			<Option target="SimpleRedis"/>
 		</Unit>
@@ -92,10 +98,22 @@
 		<Unit filename="/Users/xuyetao/CLionProjects/SimpleRedis/HashTable.h">
 			<Option target="SimpleRedis"/>
 		</Unit>
+		<Unit filename="/Users/xuyetao/CLionProjects/SimpleRedis/Interaction.cpp">
+			<Option target="SimpleRedis"/>
+		</Unit>
+		<Unit filename="/Users/xuyetao/CLionProjects/SimpleRedis/Interaction.h">
+			<Option target="SimpleRedis"/>
+		</Unit>
 		<Unit filename="/Users/xuyetao/CLionProjects/SimpleRedis/LinkListNode.cpp">
 			<Option target="SimpleRedis"/>
 		</Unit>
 		<Unit filename="/Users/xuyetao/CLionProjects/SimpleRedis/LinkListNode.h">
+			<Option target="SimpleRedis"/>
+		</Unit>
+		<Unit filename="/Users/xuyetao/CLionProjects/SimpleRedis/Sever.cpp">
+			<Option target="SimpleRedis"/>
+		</Unit>
+		<Unit filename="/Users/xuyetao/CLionProjects/SimpleRedis/Sever.h">
 			<Option target="SimpleRedis"/>
 		</Unit>
 		<Unit filename="/Users/xuyetao/CLionProjects/SimpleRedis/main.cpp">

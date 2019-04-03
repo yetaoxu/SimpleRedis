@@ -18,6 +18,7 @@ HashTable* initHashTable(int capacity) {
     hashTable->capacity = capacity;
     hashTable->size = 0;
     hashTable->repos = (LinkListNode *)malloc(sizeof(LinkListNode) * capacity);
+    printf("initHashTable succeed! \n");
     return hashTable;
 }
 

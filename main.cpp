@@ -1,15 +1,15 @@
 #include <stdio.h>
+#include <cstring>
+#include <zconf.h>
 #include "HashTable.h"
+#include "Interaction.h"
 
-int main() {
+int main(int argc, char *argv[]) {
 
-    HashTable *hashTable = initHashTable(101);
+    int capacity;
+    sscanf(argv[1], "%d", &capacity);
 
-    char *key = "sampleKey";
-    char *value = "sampleValue";
+    HashTable *hashTable = initHashTable(capacity);
 
-    put(hashTable, 9, key, 11, value);
-    printf("HashTable size: %d", hashTable->size);
-
-    DataNode *dataNode = get(hashTable, 9, key);
+    startInteract(hashTable);
 }

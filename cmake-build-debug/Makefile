@@ -123,6 +123,33 @@ SimpleRedis/fast:
 	$(MAKE) -f CMakeFiles/SimpleRedis.dir/build.make CMakeFiles/SimpleRedis.dir/build
 .PHONY : SimpleRedis/fast
 
+Client.o: Client.cpp.o
+
+.PHONY : Client.o
+
+# target to build an object file
+Client.cpp.o:
+	$(MAKE) -f CMakeFiles/SimpleRedis.dir/build.make CMakeFiles/SimpleRedis.dir/Client.cpp.o
+.PHONY : Client.cpp.o
+
+Client.i: Client.cpp.i
+
+.PHONY : Client.i
+
+# target to preprocess a source file
+Client.cpp.i:
+	$(MAKE) -f CMakeFiles/SimpleRedis.dir/build.make CMakeFiles/SimpleRedis.dir/Client.cpp.i
+.PHONY : Client.cpp.i
+
+Client.s: Client.cpp.s
+
+.PHONY : Client.s
+
+# target to generate assembly for a file
+Client.cpp.s:
+	$(MAKE) -f CMakeFiles/SimpleRedis.dir/build.make CMakeFiles/SimpleRedis.dir/Client.cpp.s
+.PHONY : Client.cpp.s
+
 DataNode.o: DataNode.cpp.o
 
 .PHONY : DataNode.o
@@ -177,6 +204,33 @@ HashTable.cpp.s:
 	$(MAKE) -f CMakeFiles/SimpleRedis.dir/build.make CMakeFiles/SimpleRedis.dir/HashTable.cpp.s
 .PHONY : HashTable.cpp.s
 
+Interaction.o: Interaction.cpp.o
+
+.PHONY : Interaction.o
+
+# target to build an object file
+Interaction.cpp.o:
+	$(MAKE) -f CMakeFiles/SimpleRedis.dir/build.make CMakeFiles/SimpleRedis.dir/Interaction.cpp.o
+.PHONY : Interaction.cpp.o
+
+Interaction.i: Interaction.cpp.i
+
+.PHONY : Interaction.i
+
+# target to preprocess a source file
+Interaction.cpp.i:
+	$(MAKE) -f CMakeFiles/SimpleRedis.dir/build.make CMakeFiles/SimpleRedis.dir/Interaction.cpp.i
+.PHONY : Interaction.cpp.i
+
+Interaction.s: Interaction.cpp.s
+
+.PHONY : Interaction.s
+
+# target to generate assembly for a file
+Interaction.cpp.s:
+	$(MAKE) -f CMakeFiles/SimpleRedis.dir/build.make CMakeFiles/SimpleRedis.dir/Interaction.cpp.s
+.PHONY : Interaction.cpp.s
+
 LinkListNode.o: LinkListNode.cpp.o
 
 .PHONY : LinkListNode.o
@@ -203,6 +257,33 @@ LinkListNode.s: LinkListNode.cpp.s
 LinkListNode.cpp.s:
 	$(MAKE) -f CMakeFiles/SimpleRedis.dir/build.make CMakeFiles/SimpleRedis.dir/LinkListNode.cpp.s
 .PHONY : LinkListNode.cpp.s
+
+Sever.o: Sever.cpp.o
+
+.PHONY : Sever.o
+
+# target to build an object file
+Sever.cpp.o:
+	$(MAKE) -f CMakeFiles/SimpleRedis.dir/build.make CMakeFiles/SimpleRedis.dir/Sever.cpp.o
+.PHONY : Sever.cpp.o
+
+Sever.i: Sever.cpp.i
+
+.PHONY : Sever.i
+
+# target to preprocess a source file
+Sever.cpp.i:
+	$(MAKE) -f CMakeFiles/SimpleRedis.dir/build.make CMakeFiles/SimpleRedis.dir/Sever.cpp.i
+.PHONY : Sever.cpp.i
+
+Sever.s: Sever.cpp.s
+
+.PHONY : Sever.s
+
+# target to generate assembly for a file
+Sever.cpp.s:
+	$(MAKE) -f CMakeFiles/SimpleRedis.dir/build.make CMakeFiles/SimpleRedis.dir/Sever.cpp.s
+.PHONY : Sever.cpp.s
 
 main.o: main.cpp.o
 
@@ -240,15 +321,24 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... SimpleRedis"
+	@echo "... Client.o"
+	@echo "... Client.i"
+	@echo "... Client.s"
 	@echo "... DataNode.o"
 	@echo "... DataNode.i"
 	@echo "... DataNode.s"
 	@echo "... HashTable.o"
 	@echo "... HashTable.i"
 	@echo "... HashTable.s"
+	@echo "... Interaction.o"
+	@echo "... Interaction.i"
+	@echo "... Interaction.s"
 	@echo "... LinkListNode.o"
 	@echo "... LinkListNode.i"
 	@echo "... LinkListNode.s"
+	@echo "... Sever.o"
+	@echo "... Sever.i"
+	@echo "... Sever.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

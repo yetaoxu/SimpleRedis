@@ -6,19 +6,23 @@
 
 #IncludeRegexTransform: 
 
-/Users/xuyetao/CLionProjects/SimpleRedis/DataNode.h
+/Users/xuyetao/CLionProjects/SimpleRedis/Client.h
 
-/Users/xuyetao/CLionProjects/SimpleRedis/HashTable.cpp
-stdlib.h
--
-HashTable.h
-/Users/xuyetao/CLionProjects/SimpleRedis/HashTable.h
+/Users/xuyetao/CLionProjects/SimpleRedis/DataNode.h
 
 /Users/xuyetao/CLionProjects/SimpleRedis/HashTable.h
 DataNode.h
 /Users/xuyetao/CLionProjects/SimpleRedis/DataNode.h
 LinkListNode.h
 /Users/xuyetao/CLionProjects/SimpleRedis/LinkListNode.h
+
+/Users/xuyetao/CLionProjects/SimpleRedis/Interaction.h
+HashTable.h
+/Users/xuyetao/CLionProjects/SimpleRedis/HashTable.h
+Client.h
+/Users/xuyetao/CLionProjects/SimpleRedis/Client.h
+Sever.h
+/Users/xuyetao/CLionProjects/SimpleRedis/Sever.h
 
 /Users/xuyetao/CLionProjects/SimpleRedis/LinkListNode.h
 DataNode.h
@@ -27,4 +31,18 @@ stdlib.h
 -
 stdio.h
 -
+
+/Users/xuyetao/CLionProjects/SimpleRedis/Sever.h
+
+/Users/xuyetao/CLionProjects/SimpleRedis/main.cpp
+stdio.h
+-
+cstring
+-
+zconf.h
+-
+HashTable.h
+/Users/xuyetao/CLionProjects/SimpleRedis/HashTable.h
+Interaction.h
+/Users/xuyetao/CLionProjects/SimpleRedis/Interaction.h
 

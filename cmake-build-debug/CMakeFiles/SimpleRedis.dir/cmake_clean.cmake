@@ -3,6 +3,9 @@ file(REMOVE_RECURSE
   "CMakeFiles/SimpleRedis.dir/DataNode.cpp.o"
   "CMakeFiles/SimpleRedis.dir/LinkListNode.cpp.o"
   "CMakeFiles/SimpleRedis.dir/HashTable.cpp.o"
+  "CMakeFiles/SimpleRedis.dir/Client.cpp.o"
+  "CMakeFiles/SimpleRedis.dir/Sever.cpp.o"
+  "CMakeFiles/SimpleRedis.dir/Interaction.cpp.o"
   "SimpleRedis.pdb"
   "SimpleRedis"
 )

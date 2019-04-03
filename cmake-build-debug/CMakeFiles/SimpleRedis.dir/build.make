@@ -109,12 +109,54 @@ CMakeFiles/SimpleRedis.dir/HashTable.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SimpleRedis.dir/HashTable.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xuyetao/CLionProjects/SimpleRedis/HashTable.cpp -o CMakeFiles/SimpleRedis.dir/HashTable.cpp.s
 
+CMakeFiles/SimpleRedis.dir/Client.cpp.o: CMakeFiles/SimpleRedis.dir/flags.make
+CMakeFiles/SimpleRedis.dir/Client.cpp.o: ../Client.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/xuyetao/CLionProjects/SimpleRedis/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/SimpleRedis.dir/Client.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SimpleRedis.dir/Client.cpp.o -c /Users/xuyetao/CLionProjects/SimpleRedis/Client.cpp
+
+CMakeFiles/SimpleRedis.dir/Client.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SimpleRedis.dir/Client.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/xuyetao/CLionProjects/SimpleRedis/Client.cpp > CMakeFiles/SimpleRedis.dir/Client.cpp.i
+
+CMakeFiles/SimpleRedis.dir/Client.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SimpleRedis.dir/Client.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xuyetao/CLionProjects/SimpleRedis/Client.cpp -o CMakeFiles/SimpleRedis.dir/Client.cpp.s
+
+CMakeFiles/SimpleRedis.dir/Sever.cpp.o: CMakeFiles/SimpleRedis.dir/flags.make
+CMakeFiles/SimpleRedis.dir/Sever.cpp.o: ../Sever.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/xuyetao/CLionProjects/SimpleRedis/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/SimpleRedis.dir/Sever.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SimpleRedis.dir/Sever.cpp.o -c /Users/xuyetao/CLionProjects/SimpleRedis/Sever.cpp
+
+CMakeFiles/SimpleRedis.dir/Sever.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SimpleRedis.dir/Sever.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/xuyetao/CLionProjects/SimpleRedis/Sever.cpp > CMakeFiles/SimpleRedis.dir/Sever.cpp.i
+
+CMakeFiles/SimpleRedis.dir/Sever.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SimpleRedis.dir/Sever.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xuyetao/CLionProjects/SimpleRedis/Sever.cpp -o CMakeFiles/SimpleRedis.dir/Sever.cpp.s
+
+CMakeFiles/SimpleRedis.dir/Interaction.cpp.o: CMakeFiles/SimpleRedis.dir/flags.make
+CMakeFiles/SimpleRedis.dir/Interaction.cpp.o: ../Interaction.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/xuyetao/CLionProjects/SimpleRedis/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/SimpleRedis.dir/Interaction.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/SimpleRedis.dir/Interaction.cpp.o -c /Users/xuyetao/CLionProjects/SimpleRedis/Interaction.cpp
+
+CMakeFiles/SimpleRedis.dir/Interaction.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SimpleRedis.dir/Interaction.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/xuyetao/CLionProjects/SimpleRedis/Interaction.cpp > CMakeFiles/SimpleRedis.dir/Interaction.cpp.i
+
+CMakeFiles/SimpleRedis.dir/Interaction.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SimpleRedis.dir/Interaction.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/xuyetao/CLionProjects/SimpleRedis/Interaction.cpp -o CMakeFiles/SimpleRedis.dir/Interaction.cpp.s
+
 # Object files for target SimpleRedis
 SimpleRedis_OBJECTS = \
 "CMakeFiles/SimpleRedis.dir/main.cpp.o" \
 "CMakeFiles/SimpleRedis.dir/DataNode.cpp.o" \
 "CMakeFiles/SimpleRedis.dir/LinkListNode.cpp.o" \
-"CMakeFiles/SimpleRedis.dir/HashTable.cpp.o"
+"CMakeFiles/SimpleRedis.dir/HashTable.cpp.o" \
+"CMakeFiles/SimpleRedis.dir/Client.cpp.o" \
+"CMakeFiles/SimpleRedis.dir/Sever.cpp.o" \
+"CMakeFiles/SimpleRedis.dir/Interaction.cpp.o"
 
 # External object files for target SimpleRedis
 SimpleRedis_EXTERNAL_OBJECTS =
@@ -123,9 +165,12 @@ SimpleRedis: CMakeFiles/SimpleRedis.dir/main.cpp.o
 SimpleRedis: CMakeFiles/SimpleRedis.dir/DataNode.cpp.o
 SimpleRedis: CMakeFiles/SimpleRedis.dir/LinkListNode.cpp.o
 SimpleRedis: CMakeFiles/SimpleRedis.dir/HashTable.cpp.o
+SimpleRedis: CMakeFiles/SimpleRedis.dir/Client.cpp.o
+SimpleRedis: CMakeFiles/SimpleRedis.dir/Sever.cpp.o
+SimpleRedis: CMakeFiles/SimpleRedis.dir/Interaction.cpp.o
 SimpleRedis: CMakeFiles/SimpleRedis.dir/build.make
 SimpleRedis: CMakeFiles/SimpleRedis.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/xuyetao/CLionProjects/SimpleRedis/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable SimpleRedis"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/xuyetao/CLionProjects/SimpleRedis/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable SimpleRedis"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SimpleRedis.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

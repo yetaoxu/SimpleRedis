@@ -22,6 +22,6 @@ void put(HashTable *hashTable, int kLen, char *key, int vLen, char *value);
 
 DataNode *get(HashTable *hashTable, int kLen, char *key);
 
-void remove(char *key);
+bool remove(HashTable *hashTable, int kLen, char *key);
 
 #endif //SIMPLEREDIS_HASH_TABLE_H
