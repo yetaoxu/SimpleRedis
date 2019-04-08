@@ -27,6 +27,20 @@ stdlib.h
 -
 string.h
 -
+sys/types.h
+-
+netinet/in.h
+-
+pthread.h
+-
+netinet/in.h
+-
+sys/socket.h
+-
+netinet/in.h
+-
+arpa/inet.h
+-
 
 /Users/xuyetao/CLionProjects/SimpleRedis/Interaction.h
 HashTable.h
