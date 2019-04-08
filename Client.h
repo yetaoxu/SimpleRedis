@@ -9,8 +9,6 @@ int connectToSever();
 
 void fullSend(int fd, char* buff, int len);
 
-void sendVersionNum(int fd, int num);
-
 void sendOrder(int fd, char *orderName);
 
 #endif //SIMPLEREDIS_CLIENT_H

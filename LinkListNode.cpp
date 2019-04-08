@@ -3,6 +3,7 @@
 //
 
 #include "LinkListNode.h"
+#include <string.h>
 
 void insert(LinkListNode *head, DataNode *dataNode) {
     if (head == nullptr) {
@@ -12,6 +13,7 @@ void insert(LinkListNode *head, DataNode *dataNode) {
     while (true) {
         if (curr->data == nullptr) {
             curr->data = dataNode;
+            curr->next = nullptr;
             return;
         }
         if (isEqual(curr->data, dataNode)) {
@@ -20,28 +22,13 @@ void insert(LinkListNode *head, DataNode *dataNode) {
         }
         if (curr->next == nullptr) {
             LinkListNode *newNode = (LinkListNode *)malloc(sizeof(LinkListNode));
-            newNode->next = NULL;
+            newNode->next = nullptr;
             newNode->data = dataNode;
             curr->next = newNode;
             return;
         }
         curr = curr->next;
     }
-}
-
-void append(LinkListNode *head, DataNode *dataNode) {
-    if (head->data == nullptr) {
-        head->data = dataNode;
-        return;
-    }
-
-    while (head->next != NULL) {
-        head = head->next;
-    }
-    LinkListNode *newNode = (LinkListNode *)malloc(sizeof(LinkListNode));
-    newNode->next = NULL;
-    newNode->data = dataNode;
-    head->next = newNode;
 }
 
 bool remove(LinkListNode *head, int kLen, char *key) {
@@ -52,10 +39,11 @@ bool remove(LinkListNode *head, int kLen, char *key) {
         if (head->next != nullptr) {
             head->data = head->next->data;
             head->next = head->next->next;
-            free(head->next);
+            //free(head->next);
             return true;
         } else {
             head->data = nullptr;
+            return true;
         }
     }
     LinkListNode *prev = head;
@@ -86,3 +74,4 @@ DataNode* find(LinkListNode *head, int kLen, char *key) {
     }
     return nullptr;
 }
+

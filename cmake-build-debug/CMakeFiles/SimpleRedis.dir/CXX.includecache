@@ -16,6 +16,18 @@ DataNode.h
 LinkListNode.h
 /Users/xuyetao/CLionProjects/SimpleRedis/LinkListNode.h
 
+/Users/xuyetao/CLionProjects/SimpleRedis/Interaction.cpp
+Interaction.h
+/Users/xuyetao/CLionProjects/SimpleRedis/Interaction.h
+cstring
+-
+zconf.h
+-
+stdlib.h
+-
+string.h
+-
+
 /Users/xuyetao/CLionProjects/SimpleRedis/Interaction.h
 HashTable.h
 /Users/xuyetao/CLionProjects/SimpleRedis/HashTable.h
@@ -33,16 +45,4 @@ stdio.h
 -
 
 /Users/xuyetao/CLionProjects/SimpleRedis/Sever.h
-
-/Users/xuyetao/CLionProjects/SimpleRedis/main.cpp
-stdio.h
--
-cstring
--
-zconf.h
--
-HashTable.h
-/Users/xuyetao/CLionProjects/SimpleRedis/HashTable.h
-Interaction.h
-/Users/xuyetao/CLionProjects/SimpleRedis/Interaction.h
 

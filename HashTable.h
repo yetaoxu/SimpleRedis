@@ -14,14 +14,18 @@ struct HashTable {
     LinkListNode *repos;
 };
 
-int hash(HashTable *hashTable, char *key, int len);
+int hashfun(HashTable *hashTable, char *key, int len);
 
 HashTable* initHashTable(int capacity);
+
+void transfer(LinkListNode *oldHashTable, HashTable *hashTable, int newCapacity);
+
+void resize(int newCapacity, HashTable *hashTable);
 
 void put(HashTable *hashTable, int kLen, char *key, int vLen, char *value);
 
 DataNode *get(HashTable *hashTable, int kLen, char *key);
 
-bool remove(HashTable *hashTable, int kLen, char *key);
+bool move(HashTable *hashTable, int kLen, char *key);
 
 #endif //SIMPLEREDIS_HASH_TABLE_H

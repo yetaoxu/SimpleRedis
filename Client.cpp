@@ -10,6 +10,7 @@
 #include <netinet/in.h>
 #include <arpa/inet.h>
 #include <unistd.h>
+#include "Client.h"
 
 int connectToSever() {
     int fd;
@@ -39,10 +40,6 @@ void fullSend(int fd, char* buff, int len) {
         remain -= sendLen;
         startPoint += sendLen;
     }
-}
-
-void sendVersionNum(int fd, int num) {
-    fullSend(fd, (char* )&num, 4);
 }
 
 void sendOrder(int fd, char *orderName) {

@@ -5,14 +5,11 @@
 #ifndef SIMPLEREDIS_DATANODE_H
 #define SIMPLEREDIS_DATANODE_H
 
-using namespace std;
-
 struct DataNode {
+    int vLen;
     int kLen;
     char *key;
-    int vLen;
     char *value;
-    struct DataNode *next;
 };
 
 bool isEqual(DataNode *left, DataNode *right);

@@ -16,8 +16,6 @@ struct LinkListNode {
 
 void insert(LinkListNode *head, DataNode *dataNode);
 
-void append(LinkListNode *head, DataNode *dataNode);
-
 bool remove(LinkListNode *head, int kLen, char *key);
 
 DataNode* find(LinkListNode *head, int kLen, char *key);

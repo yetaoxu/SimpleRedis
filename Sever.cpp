@@ -53,12 +53,11 @@ void fullRecv(int fd, char* buff, int len) {
     }
 }
 
-void recvVersionNum(int fd, int num) {
-    fullRecv(fd, (char* )&num, 4);
-}
-
-void recvOrder(int fd, char *orderName) {
-    int orderNameLen = (int)strlen(orderName);
+char *recvOrder(int fd) {
+    char *orderName = (char *)malloc(sizeof(char) * 100);
+    memset(orderName, 0, sizeof(char) * 100);
+    int orderNameLen = 0;
     fullRecv(fd, (char* )&orderNameLen, 4);
     fullRecv(fd, orderName, orderNameLen);
+    return orderName;
 }
