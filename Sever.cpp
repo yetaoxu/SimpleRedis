@@ -32,15 +32,6 @@ int listening() {
     return fd;
 }
 
-int acceptClient(int fd) {
-    int struct_len = sizeof(struct sockaddr_in);
-    int newFd;
-    struct sockaddr_in client_addr;
-    newFd = accept(fd, (struct sockaddr *) &client_addr, (socklen_t * ) & struct_len);
-    printf("Get the Client!\n");
-    return newFd;
-}
-
 void fullRecv(int fd, char* buff, int len) {
     char* starPoint = buff;
     int remain = len;

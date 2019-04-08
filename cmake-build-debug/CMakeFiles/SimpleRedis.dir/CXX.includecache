@@ -58,5 +58,37 @@ stdlib.h
 stdio.h
 -
 
+/Users/xuyetao/CLionProjects/SimpleRedis/Sever.cpp
+stdlib.h
+-
+string.h
+-
+errno.h
+-
+sys/socket.h
+-
+resolv.h
+-
+stdio.h
+-
+netinet/in.h
+-
+arpa/inet.h
+-
+unistd.h
+-
+
 /Users/xuyetao/CLionProjects/SimpleRedis/Sever.h
+
+/Users/xuyetao/CLionProjects/SimpleRedis/main.cpp
+stdio.h
+-
+cstring
+-
+zconf.h
+-
+HashTable.h
+/Users/xuyetao/CLionProjects/SimpleRedis/HashTable.h
+Interaction.h
+/Users/xuyetao/CLionProjects/SimpleRedis/Interaction.h
 

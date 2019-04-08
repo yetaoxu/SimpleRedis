@@ -9,8 +9,6 @@ const int protocolVersion = 1;
 
 int listening();
 
-int acceptClient(int fd);
-
 void fullRecv(int fd, char* buff, int len);
 
 char *recvOrder(int fd);

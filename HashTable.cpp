@@ -64,37 +64,33 @@ void resize(int newCapacity, HashTable *hashTable) {
         t->data = nullptr;
         t->next = nullptr;
     }
-    for (LinkListNode *temp = hashTable->repos; temp != hashTable->repos + hashTable->capacity; temp++) {
-        LinkListNode *cur = temp;
-        while (cur->data != nullptr) {
-            if (copyHashTable->data == nullptr) {
+    LinkListNode *temp1 = hashTable->repos;
+    LinkListNode *temp2 = copyHashTable;
+    while (temp1 != hashTable->repos + hashTable->capacity) {
+        LinkListNode *cur1 = temp1;
+        LinkListNode *cur2 = temp2;
+        while (cur1->data != nullptr) {
+            if (cur2->data == nullptr) {
                 DataNode *tempDataNode = (DataNode *)malloc(sizeof(DataNode));
-                tempDataNode->kLen = cur->data->kLen;
-                tempDataNode->key = (char *)malloc(sizeof(char) * cur->data->kLen);
-                memcpy(tempDataNode->key, cur->data->key, cur->data->kLen);
-                tempDataNode->vLen = cur->data->vLen;
-                tempDataNode->value = (char *)malloc(sizeof(char) * cur->data->vLen);
-                memcpy(tempDataNode->value, cur->data->value, cur->data->vLen);
-                copyHashTable->data = tempDataNode;
-
-            } else {
+                tempDataNode->kLen = cur1->data->kLen;
+                tempDataNode->key = (char *)malloc(sizeof(char) * cur1->data->kLen);
+                memcpy(tempDataNode->key, cur1->data->key, cur1->data->kLen);
+                tempDataNode->vLen = cur1->data->vLen;
+                tempDataNode->value = (char *)malloc(sizeof(char) * cur1->data->vLen);
+                memcpy(tempDataNode->value, cur1->data->value, cur1->data->vLen);
+                cur2->data = tempDataNode;
+            }
+            if (cur1->next != nullptr) {
                 LinkListNode *newNode = (LinkListNode *)malloc(sizeof(LinkListNode));
-                DataNode *dataNode = (DataNode *)malloc(sizeof(DataNode));
-                dataNode->kLen = cur->data->kLen;
-                dataNode->key = (char *)malloc(sizeof(char) * cur->data->kLen);
-                memcpy(dataNode->key, cur->data->key, cur->data->kLen);
-                dataNode->vLen = cur->data->vLen;
-                dataNode->value = (char *)malloc(sizeof(char) * cur->data->vLen);
-                memcpy(dataNode->value, cur->data->value, cur->data->vLen);
-                newNode->data = dataNode;
+                newNode->data = nullptr;
                 newNode->next = nullptr;
-                copyHashTable->next = newNode;
+                cur2->next = newNode;
             }
-            if (cur->next == nullptr) {
-                break;
-            }
-            cur = cur->next;
+            cur1 = cur1->next;
+            cur2 = cur2->next;
         }
+        temp1++;
+        temp2++;
     }
     transfer(copyHashTable, hashTable, newCapacity);
 }
@@ -131,11 +127,11 @@ bool move(HashTable *hashTable, int kLen, char *key) {
         return false;
     }
     bool removed = remove(head, kLen, key);
-//    if (removed) {
-//        hashTable->size--;
-//        int f = hashTable->capacity / hashTable->size;
-//        if (f >= 2)
-//            resize(hashTable->capacity / 4, hashTable);
-//    }
+    if (removed) {
+        hashTable->size--;
+        int f = hashTable->capacity / hashTable->size;
+        if (f >= 2)
+            resize(hashTable->capacity / 4, hashTable);
+    }
     return removed;
 }

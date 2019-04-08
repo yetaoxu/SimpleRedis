@@ -16,14 +16,14 @@
 #include<arpa/inet.h>
 
 const int BUF_SIZE = 1024;
-char closeOrder[10] = "CLOSE";
-char closeOr[10] = "close";
-char putOrder[10] = "PUT";
-char putOr[10] = "put";
-char removeOrder[10] = "DELETE";
-char removeOr[10] = "delete";
-char getOrder[10] = "GET";
-char getOr[10] = "get";
+char *closeOrder = "CLOSE";
+char *closeOr = "close";
+char *putOrder = "PUT";
+char *putOr = "put";
+char *removeOrder = "DELETE";
+char *removeOr = "delete";
+char *getOrder = "GET";
+char *getOr = "get";
 char *returnOk = "OK";
 char *returnNull = "null";
 char *returnNotFound = "Not Found";
@@ -99,7 +99,6 @@ void *commandHandle(void *parameters) {
                 printf("unknown command...\n");
             }
         }
-
     }
     close(newFd);
     printf("current client disconnect.\n");
