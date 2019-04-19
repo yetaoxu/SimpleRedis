@@ -40,13 +40,11 @@ void *commandHandle(void *parameters) {
     para *t = (para *)parameters;
     int newFd = t->fdd;
     HashTable *hashTable = t->ht;
-
     int magicNumber = 1;
     while (true) {
         if (protocolVersion != magicNumber) {
             break;
         } else {
-
             char orderName[BUF_SIZE];
             char k[BUF_SIZE];
             char v[BUF_SIZE];
@@ -108,7 +106,6 @@ void *commandHandle(void *parameters) {
 void startInteract(HashTable *hashTable) {
     int fd = listening();
     int newFd;
-    int n = 2;
     while (true) {
         pthread_t threadId;
         int clientLength = sizeof(struct sockaddr_in);
@@ -128,9 +125,6 @@ void startInteract(HashTable *hashTable) {
         struct para temp;
         temp.fdd = newFd;
         temp.ht = hashTable;
-        for (int i = 0; i < n; i++) {
-
-        }
         if (pthread_create(&threadId, NULL, commandHandle, &temp) == -1) {
             printf("pthread create error");
             break;

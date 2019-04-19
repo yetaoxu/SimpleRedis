@@ -80,12 +80,6 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/xuyetao/CLionProjects/SimpleRedis/Client.cpp">
-			<Option target="SimpleRedis"/>
-		</Unit>
-		<Unit filename="/Users/xuyetao/CLionProjects/SimpleRedis/Client.h">
-			<Option target="SimpleRedis"/>
-		</Unit>
 		<Unit filename="/Users/xuyetao/CLionProjects/SimpleRedis/DataNode.cpp">
 			<Option target="SimpleRedis"/>
 		</Unit>

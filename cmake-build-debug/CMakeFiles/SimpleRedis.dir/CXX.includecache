@@ -6,9 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/Users/xuyetao/CLionProjects/SimpleRedis/Client.h
-
 /Users/xuyetao/CLionProjects/SimpleRedis/DataNode.h
+
+/Users/xuyetao/CLionProjects/SimpleRedis/HashTable.cpp
+stdlib.h
+-
+HashTable.h
+/Users/xuyetao/CLionProjects/SimpleRedis/HashTable.h
+cstring
+-
+string.h
+-
 
 /Users/xuyetao/CLionProjects/SimpleRedis/HashTable.h
 DataNode.h
@@ -45,10 +53,14 @@ arpa/inet.h
 /Users/xuyetao/CLionProjects/SimpleRedis/Interaction.h
 HashTable.h
 /Users/xuyetao/CLionProjects/SimpleRedis/HashTable.h
-Client.h
-/Users/xuyetao/CLionProjects/SimpleRedis/Client.h
 Sever.h
 /Users/xuyetao/CLionProjects/SimpleRedis/Sever.h
+
+/Users/xuyetao/CLionProjects/SimpleRedis/LinkListNode.cpp
+LinkListNode.h
+/Users/xuyetao/CLionProjects/SimpleRedis/LinkListNode.h
+string.h
+-
 
 /Users/xuyetao/CLionProjects/SimpleRedis/LinkListNode.h
 DataNode.h
@@ -59,6 +71,8 @@ stdio.h
 -
 
 /Users/xuyetao/CLionProjects/SimpleRedis/Sever.cpp
+Sever.h
+/Users/xuyetao/CLionProjects/SimpleRedis/Sever.h
 stdlib.h
 -
 string.h

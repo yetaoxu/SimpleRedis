@@ -1,6 +1,7 @@
 //
 // Created by xuyetao on 2019/3/31.
 //
+#include "Sever.h"
 #include <stdlib.h>
 #include <string.h>
 #include <errno.h>
@@ -49,4 +50,20 @@ char *recvOrder(int fd) {
     fullRecv(fd, (char* )&orderNameLen, 4);
     fullRecv(fd, orderName, orderNameLen);
     return orderName;
+}
+
+void fullSend(int fd, char* buff, int len) {
+    char* startPoint = buff;
+    int remain = len;
+    while (remain > 0) {
+        int sendLen = (int)send(fd, startPoint, remain, 0);
+        remain -= sendLen;
+        startPoint += sendLen;
+    }
+}
+
+void sendOrder(int fd, char *orderName) {
+    int orderNameLen = (int)strlen(orderName);
+    fullSend(fd, (char* )&orderNameLen, 4);
+    fullSend(fd, orderName, orderNameLen);
 }

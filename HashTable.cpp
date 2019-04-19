@@ -24,14 +24,12 @@ HashTable* initHashTable(int capacity) {
         t->data = nullptr;
         t->next = nullptr;
     }
-
     printf("initHashTable succeed! \n");
     return hashTable;
 }
 
 void transfer(LinkListNode *copyHashTable, HashTable *hashTable, int newCapacity) {
     int oldCapacity = hashTable->capacity;
-
     hashTable->capacity = newCapacity;
     hashTable->size = 0;
     hashTable->repos = (LinkListNode *)malloc(sizeof(LinkListNode) * newCapacity);
@@ -39,7 +37,6 @@ void transfer(LinkListNode *copyHashTable, HashTable *hashTable, int newCapacity
         t->data = nullptr;
         t->next = nullptr;
     }
-
     for (LinkListNode *temp = copyHashTable; temp != copyHashTable + oldCapacity; temp++) {
         LinkListNode* cur = temp;
         while (cur->data != nullptr) {

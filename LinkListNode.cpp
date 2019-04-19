@@ -39,7 +39,6 @@ bool remove(LinkListNode *head, int kLen, char *key) {
         if (head->next != nullptr) {
             head->data = head->next->data;
             head->next = head->next->next;
-            //free(head->next);
             return true;
         } else {
             head->data = nullptr;

@@ -6,7 +6,6 @@
 #define SIMPLEREDIS_INTERACTION_H
 
 #include "HashTable.h"
-#include "Client.h"
 #include "Sever.h"
 
 void startInteract(HashTable *hashTable);
