@@ -7,13 +7,13 @@
 
 #include "DataNode.h"
 #include "LinkListNode.h"
-
+#include <pthread.h>
+extern pthread_rwlock_t rwlock;
 struct HashTable {
     int capacity;
     int size;
     LinkListNode *repos;
 };
-
 int hashfun(HashTable *hashTable, char *key, int len);
 
 HashTable* initHashTable(int capacity);

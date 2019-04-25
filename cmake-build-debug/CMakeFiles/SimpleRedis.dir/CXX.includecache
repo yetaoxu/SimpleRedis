@@ -17,12 +17,18 @@ cstring
 -
 string.h
 -
+pthread.h
+-
+zconf.h
+-
 
 /Users/xuyetao/CLionProjects/SimpleRedis/HashTable.h
 DataNode.h
 /Users/xuyetao/CLionProjects/SimpleRedis/DataNode.h
 LinkListNode.h
 /Users/xuyetao/CLionProjects/SimpleRedis/LinkListNode.h
+pthread.h
+-
 
 /Users/xuyetao/CLionProjects/SimpleRedis/Interaction.cpp
 Interaction.h
@@ -49,6 +55,8 @@ netinet/in.h
 -
 arpa/inet.h
 -
+pthread.h
+-
 
 /Users/xuyetao/CLionProjects/SimpleRedis/Interaction.h
 HashTable.h
@@ -56,40 +64,12 @@ HashTable.h
 Sever.h
 /Users/xuyetao/CLionProjects/SimpleRedis/Sever.h
 
-/Users/xuyetao/CLionProjects/SimpleRedis/LinkListNode.cpp
-LinkListNode.h
-/Users/xuyetao/CLionProjects/SimpleRedis/LinkListNode.h
-string.h
--
-
 /Users/xuyetao/CLionProjects/SimpleRedis/LinkListNode.h
 DataNode.h
 /Users/xuyetao/CLionProjects/SimpleRedis/DataNode.h
 stdlib.h
 -
 stdio.h
--
-
-/Users/xuyetao/CLionProjects/SimpleRedis/Sever.cpp
-Sever.h
-/Users/xuyetao/CLionProjects/SimpleRedis/Sever.h
-stdlib.h
--
-string.h
--
-errno.h
--
-sys/socket.h
--
-resolv.h
--
-stdio.h
--
-netinet/in.h
--
-arpa/inet.h
--
-unistd.h
 -
 
 /Users/xuyetao/CLionProjects/SimpleRedis/Sever.h

@@ -4,8 +4,6 @@
 #include "HashTable.h"
 #include "Interaction.h"
 
-
-
 int main(int argc, char *argv[]) {
     int capacity;
 

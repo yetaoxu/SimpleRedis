@@ -14,7 +14,7 @@
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include<arpa/inet.h>
-
+#include <pthread.h>
 const int BUF_SIZE = 1024;
 char *closeOrder = "CLOSE";
 char *closeOr = "close";
@@ -29,7 +29,6 @@ char *returnNull = "null";
 char *returnNotFound = "Not Found";
 char *returnByeBye = "Bye Bye";
 char *returnUnknowCommand = "Unknow Command";
-
 struct para {
     int fdd;
     HashTable *ht;
@@ -130,4 +129,5 @@ void startInteract(HashTable *hashTable) {
             break;
         }
     }
+    pthread_rwlock_destroy(&rwlock);
 }

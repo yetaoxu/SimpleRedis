@@ -7,7 +7,6 @@
 
 #include "HashTable.h"
 #include "Sever.h"
-
 void startInteract(HashTable *hashTable);
 
 #endif //SIMPLEREDIS_INTERACTION_H

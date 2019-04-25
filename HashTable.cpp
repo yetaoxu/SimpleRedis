@@ -6,7 +6,9 @@
 #include "HashTable.h"
 #include <cstring>
 #include <string.h>
-
+#include <pthread.h>
+#include <zconf.h>
+pthread_rwlock_t rwlock = PTHREAD_RWLOCK_INITIALIZER;
 int hashfun(HashTable *hashTable, char *key, int len) {
     int sum = 0;
     for (int i = 0; i < len; i++) {
@@ -44,9 +46,6 @@ void transfer(LinkListNode *copyHashTable, HashTable *hashTable, int newCapacity
             LinkListNode *head = hashTable->repos + bucketIndex;
             insert(head, cur->data);
             hashTable->size++;
-
-            printf("new size : %d\n", hashTable->size);
-            printf("cur key : %s\n", cur->data->key);
             if (cur->next == nullptr) {
                 break;
             }
@@ -85,6 +84,9 @@ void resize(int newCapacity, HashTable *hashTable) {
             }
             cur1 = cur1->next;
             cur2 = cur2->next;
+            if (cur1 == nullptr) {
+                break;
+            }
         }
         temp1++;
         temp2++;
@@ -93,6 +95,7 @@ void resize(int newCapacity, HashTable *hashTable) {
 }
 
 void put(HashTable *hashTable, int kLen, char *key, int vLen, char *value) {
+    pthread_rwlock_rdlock(&rwlock);
     DataNode *dataNode = (DataNode *)malloc(sizeof(DataNode));
     dataNode->kLen = kLen;
     dataNode->key = (char *)malloc(sizeof(char) * kLen);
@@ -104,31 +107,42 @@ void put(HashTable *hashTable, int kLen, char *key, int vLen, char *value) {
     LinkListNode *head = hashTable->repos + bucketIndex;
     insert(head, dataNode);
     hashTable->size++;
+    pthread_rwlock_unlock(&rwlock);
     int f = hashTable->size / hashTable->capacity;
     if (f >= 2) {
+        pthread_rwlock_wrlock(&rwlock);
         printf("begin to resize : enlarge quadruple... \n");
         resize(hashTable->capacity * 4, hashTable);
+        sleep(8);
+        pthread_rwlock_unlock(&rwlock);
     }
 }
 
 DataNode *get(HashTable *hashTable, int kLen, char *key) {
+    pthread_rwlock_rdlock(&rwlock);
     int bucketIndex = hashfun(hashTable, key, kLen);
     LinkListNode *head = hashTable->repos + bucketIndex;
-    return find(head, kLen, key);
+    DataNode *res = find(head, kLen, key);
+    pthread_rwlock_unlock(&rwlock);
+    return res;
 }
 
 bool move(HashTable *hashTable, int kLen, char *key) {
+    pthread_rwlock_rdlock(&rwlock);
     int bucketIndex = hashfun(hashTable, key, kLen);
     LinkListNode *head = hashTable->repos + bucketIndex;
     if (head == nullptr) {
         return false;
     }
     bool removed = remove(head, kLen, key);
+    pthread_rwlock_unlock(&rwlock);
     if (removed) {
         hashTable->size--;
         int f = hashTable->capacity / hashTable->size;
         if (f >= 2)
+            pthread_rwlock_wrlock(&rwlock);
             resize(hashTable->capacity / 4, hashTable);
+            pthread_rwlock_unlock(&rwlock);
     }
     return removed;
 }
